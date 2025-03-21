@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+//   /* config options here */
+// };
+
+// export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export", // Enable static export for GitHub Pages
+  images: {
+    unoptimized: true, // Required for GitHub Pages
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
