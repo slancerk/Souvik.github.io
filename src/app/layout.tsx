@@ -1,6 +1,6 @@
 "use client"; // Ensure this is at the top
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";

@@ -232,9 +232,9 @@ export default function Home() {
           { icon: <FaLinkedin size={30} />, link: "https://linkedin.com/in/yourlinkedin" },
           { icon: <FaTwitter size={30} />, link: "https://twitter.com/yourtwitter" },
         ].map((item, index) => (
-          <a key={index} href={item.link} target="_blank" className="hover:text-blue-400">
+          <Link key={index} href={item.link} target="_blank" className="hover:text-blue-400">
             {item.icon}
-          </a>
+          </Link>
         ))}
       </footer>
     </>

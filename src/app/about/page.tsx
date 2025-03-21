@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 export default function About() {
     return (
         <div className="min-h-screen w-full bg-gradient-to-b from-gray-900 to-black text-white flex flex-col items-center">
@@ -29,14 +31,14 @@ export default function About() {
                     
                     {/* Terraform Certification */}
                     <div className="flex flex-col items-center w-1/2 bg-gray-800 p-8 rounded-lg shadow-lg">
-                        <img src="https://images.credly.com/size/220x220/images/99289602-861e-4929-8277-773e63a2fa6f/image.png" 
+                        <Image src="https://images.credly.com/size/220x220/images/99289602-861e-4929-8277-773e63a2fa6f/image.png" 
                              alt="Terraform Certification" className="w-32 h-32 object-contain mb-4" />
                         <p className="text-lg font-semibold text-white">Terraform Certified</p>
                     </div>
 
                     {/* AWS Certification */}
                     <div className="flex flex-col items-center w-1/2 bg-gray-800 p-8 rounded-lg shadow-lg">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Fr_KLvOIFIXioOFGQNmglQ.png" 
+                        <Image src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Fr_KLvOIFIXioOFGQNmglQ.png" 
                              alt="AWS Certification" className="w-32 h-32 object-contain mb-4" />
                         <p className="text-lg font-semibold text-white">AWS Solution Architect</p>
                     </div>
@@ -51,7 +53,7 @@ export default function About() {
 
                         {/* Course 1 - Nexleap */}
                         <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                            {/* <img src="https://media.licdn.com/dms/image/C560BAQG6BbWDmHHiyQ/company-logo_200_200/0/1631349027762?e=2147483647&v=beta&t=HIx-LUzO4IfDIOX-1LsZd6iQ-5zbmHpDKwevw6KYptk
+                            {/* <Image src="https://media.licdn.com/dms/image/C560BAQG6BbWDmHHiyQ/company-logo_200_200/0/1631349027762?e=2147483647&v=beta&t=HIx-LUzO4IfDIOX-1LsZd6iQ-5zbmHpDKwevw6KYptk
 " 
                                  alt="Nexleap Logo" className="w-12 h-12 object-contain" /> */}
                             <p className="text-lg text-white font-medium">Product Management by Nexleap</p>
@@ -59,21 +61,21 @@ export default function About() {
 
                         {/* Course 2 - Udemy */}
                         <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                            {/* <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-aarug&psig=AOvVaw1IRCm2EWL5EuMSJl8nF9jl&ust=1742614602218000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDc47afmowDFQAAAAAdAAAAABA"  */}
+                            {/* <Image src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-aarug&psig=AOvVaw1IRCm2EWL5EuMSJl8nF9jl&ust=1742614602218000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDc47afmowDFQAAAAAdAAAAABA"  */}
                                  {/* alt="Udemy Logo" className="w-12 h-12 object-contain" /> */}
                             <p className="text-lg text-white font-medium">DevOps Mastery on Udemy</p>
                         </div>
 
                         {/* Course 3 - Coursera */}
                         <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                            {/* <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Coursera-Logo_600x600.svg" 
+                            {/* <Image src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Coursera-Logo_600x600.svg" 
                                  alt="Coursera Logo" className="w-12 h-12 object-contain" /> */}
                             <p className="text-lg text-white font-medium">Kubernetes Advanced on Coursera</p>
                         </div>
 
                         {/* Course 4 - YouTube */}
                         <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                            {/* <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" 
+                            {/* <Image src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" 
                                  alt="YouTube Logo" className="w-12 h-12 object-contain" /> */}
                             <p className="text-lg text-white font-medium">System Design by CodeKarle (YouTube)</p>
                         </div>
@@ -84,9 +86,9 @@ export default function About() {
 
             {/* Back to Home */}
             <div className="w-full py-10 flex justify-center">
-                <a href="/" className="text-white bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                <Link href="/" className="text-white bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
                     ← Back to Home
-                </a>
+                </Link>
             </div>
         </div>
     );
